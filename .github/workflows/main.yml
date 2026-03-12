@@ -5,11 +5,12 @@ on: push
 jobs:
   my_first_job:
    name: My first job
+   continue-on-error: true
    runs-on: ubuntu-latest
 
    steps:
       - name: Greeting
-        run: echo "Hello Paras! GitHub Action Running"
+        run: ech "Hello Paras! GitHub Action Running"
 
   my_second_job:
    name: My second job
