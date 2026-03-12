@@ -10,7 +10,7 @@ jobs:
 
    steps:
       - name: Greeting
-        run: ech "Hello Paras! GitHub Action Running"
+        run: echo "Hello Paras! GitHub Action Running"
 
   my_second_job:
    name: My second job
