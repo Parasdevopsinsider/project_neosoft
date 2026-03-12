@@ -19,6 +19,6 @@ jobs:
     - name: Greeting
       run: echo "Hello Devops Teams"
       
-     - 
+    
   
   
