@@ -13,8 +13,9 @@ jobs:
 
   my_second_job:
    name: My second job
+   needs: My first job
    runs-on: windows-latest
-
+   
    steps:
     - name: Greeting
       run: echo "Hello Devops Teams"
