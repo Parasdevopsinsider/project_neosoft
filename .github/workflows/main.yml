@@ -1,0 +1,26 @@
+name: Hello World Workflow
+
+on: push
+
+jobs:
+  my_first_job:
+   name: My first job
+   continue-on-error: true
+   runs-on: ubuntu-latest
+
+   steps:
+      - name: Greeting
+        run: echo "Hello Paras! GitHub Action Running"
+
+  my_second_job:
+   name: My second job
+   needs: my_first_job
+   runs-on: windows-latest
+   
+   steps:
+    - name: Greeting
+      run: echo "Hello Devops Teams"
+      
+    
+  
+  
